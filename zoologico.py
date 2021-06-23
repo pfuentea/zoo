@@ -6,12 +6,19 @@ class Zoo():
 
     def add_Washimingo(self,nombre):
         self.animales.append( Washimingo(nombre) )
+        print(f'Washimingo {nombre} agregado!')
     
     def add_Centauro(self,nombre):
         self.animales.append( Centauro(nombre) )
+        print(f'Centauro {nombre} agregado!')
 
     def add_Esfinge(self,nombre):
         self.animales.append( Esfinge(nombre) )
+        print(f'Esfinge {nombre} agregada!')
+    
+    def add_Dragon(self,nombre):
+        self.animales.append( Dragon(nombre) )
+        print(f'Dragón {nombre} agregado!')
 
     def display_info(self):
         zoo=['ZOO->']
