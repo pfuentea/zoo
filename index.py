@@ -4,6 +4,8 @@ def menu_animales():
     print("[1]:Washimingo")
     print("[2]:Centauro")
     print("[3]:Esfinge")
+    print("[4]:Dragón")
+    print("[5]:Dragón Especial")
 
 def valida_interactuar(z,indice):    
     if indice =='x':
@@ -41,6 +43,15 @@ while(continuar):
                 nombre=input("Ingrese un nombre para la Esfinge: ")
                 z.add_Esfinge(nombre)
                 break
+            elif opt2=='4':
+                nombre=input("Ingrese un nombre para el Dragón: ")
+                z.add_Dragon(nombre)
+                break
+            elif opt2=='5':
+                nombre=input("Ingrese un nombre para el Dragón: ")
+                material=input("Ingrese un material para el Dragón: ")
+                z.add_DragonM(nombre,material)
+                break
             elif opt2=='x':
                 break
             else:
@@ -58,6 +69,7 @@ while(continuar):
                     accion=input("Elija una opción: ")
                     resultado=z.interaccion(indice_correcto,accion)
                 else:
+                    print("Opción no valida, vuelva a intentar.")
                     break
             else:
                 print("Aún no existen animales, deberías agregar algunos! ")

@@ -20,6 +20,10 @@ class Zoo():
         self.animales.append( Dragon(nombre) )
         print(f'Dragón {nombre} agregado!')
 
+    def add_DragonM(self,nombre,material):
+        self.animales.append(Dragon_Especial(nombre,material))
+        print(f'Dragón {nombre} de {material} agregado!')
+
     def display_info(self):
         zoo=['ZOO->']
         for animal in self.animales:
